@@ -1,26 +1,37 @@
 Generating data using Probabilistic CTCF Matrix...
 Data shapes: Train (2800, 100, 4), Val (600, 100, 4), Test (600, 100, 4)
 Training CNN...
-  Epoch 5: Val Acc = 0.9700
-  Epoch 10: Val Acc = 0.9717
-  Epoch 15: Val Acc = 0.9733
+  Epoch 5: Val Acc = 0.9750
+  Epoch 10: Val Acc = 0.9783
+  Epoch 15: Val Acc = 0.9817
 Training SimpleRNN...
-  Epoch 5: Val Acc = 0.5050
-  Epoch 10: Val Acc = 0.4983
-  Epoch 15: Val Acc = 0.5117
+  Epoch 5: Val Acc = 0.4850
+  Epoch 10: Val Acc = 0.5583
+  Epoch 15: Val Acc = 0.4867
 Training LSTMModel...
-  Epoch 5: Val Acc = 0.5000
-  Epoch 10: Val Acc = 0.5017
-  Epoch 15: Val Acc = 0.4900
+  Epoch 5: Val Acc = 0.4617
+  Epoch 10: Val Acc = 0.4817
+  Epoch 15: Val Acc = 0.4883
 Training TransformerModel...
-  Epoch 5: Val Acc = 0.6817
-  Epoch 10: Val Acc = 0.6717
-  Epoch 15: Val Acc = 0.6683
+  Epoch 5: Val Acc = 0.5633
+  Epoch 10: Val Acc = 0.5767
+  Epoch 15: Val Acc = 0.5750
+2025-11-24 23:28:25.127 python[90151:24784531] The class 'NSSavePanel' overrides the method identifier.  This method is implemented by class 'NSWindow'
 
---- Final Test Accuracy ---
-Model           | Accuracy  
-------------------------------
-CNN             | 0.9550
-SimpleRNN       | 0.5450
-LSTM            | 0.4950
-Transformer     | 0.6200
+--- FINAL MODEL RANKING (Based on Test Accuracy) ---
+Rank  | Model           | Accuracy  
+-----------------------------------
+1     | CNN             | 0.9633
+2     | Transformer     | 0.6300
+3     | LSTM            | 0.5250
+4     | SimpleRNN       | 0.4833
+
+--- Generating Saliency Maps for Best Model (CNN) ---
+/Users/yuqitao/Desktop/practice.py:240: UserWarning: Glyph 129516 (\N{DNA DOUBLE HELIX}) missing from current font.
+  plt.tight_layout()
+/Users/yuqitao/Desktop/practice.py:241: UserWarning: Glyph 129516 (\N{DNA DOUBLE HELIX}) missing from current font.
+  plt.show()
+/Users/yuqitao/Desktop/practice.py:240: UserWarning: Glyph 128683 (\N{NO ENTRY SIGN}) missing from current font.
+  plt.tight_layout()
+/Users/yuqitao/Desktop/practice.py:241: UserWarning: Glyph 128683 (\N{NO ENTRY SIGN}) missing from current font.
+  plt.show()
