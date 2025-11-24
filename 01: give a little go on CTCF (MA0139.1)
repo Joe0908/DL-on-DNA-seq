@@ -1,3 +1,4 @@
+#data resource: https://jaspar.elixir.no/temp/20251124234327_JASPAR2024_combined_matrices_1553058_jaspar.txt
 import numpy as np
 import matplotlib.pyplot as plt
 import torch
