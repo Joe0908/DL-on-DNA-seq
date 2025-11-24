@@ -327,4 +327,4 @@ if best_model_name == "CNN":
     visualize_saliency_map(best_model, neg_seq_onehot, neg_true_label, 
                            title=f"{best_model_name} Saliency Map - Negative Example (No Motif) ")
 else:
-    print(f"\nSaliency Map skipped: Best model is the {best_model_name}, but visualization is only supported for the CNN structure.")
+    print(f"\nSaliency Map skipped: Best model is the {best_model_name}, but visualisation is only supported for the CNN structure.")
