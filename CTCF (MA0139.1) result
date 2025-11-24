@@ -1,0 +1,26 @@
+Generating data using Probabilistic CTCF Matrix...
+Data shapes: Train (2800, 100, 4), Val (600, 100, 4), Test (600, 100, 4)
+Training CNN...
+  Epoch 5: Val Acc = 0.9700
+  Epoch 10: Val Acc = 0.9717
+  Epoch 15: Val Acc = 0.9733
+Training SimpleRNN...
+  Epoch 5: Val Acc = 0.5050
+  Epoch 10: Val Acc = 0.4983
+  Epoch 15: Val Acc = 0.5117
+Training LSTMModel...
+  Epoch 5: Val Acc = 0.5000
+  Epoch 10: Val Acc = 0.5017
+  Epoch 15: Val Acc = 0.4900
+Training TransformerModel...
+  Epoch 5: Val Acc = 0.6817
+  Epoch 10: Val Acc = 0.6717
+  Epoch 15: Val Acc = 0.6683
+
+--- Final Test Accuracy ---
+Model           | Accuracy  
+------------------------------
+CNN             | 0.9550
+SimpleRNN       | 0.5450
+LSTM            | 0.4950
+Transformer     | 0.6200
